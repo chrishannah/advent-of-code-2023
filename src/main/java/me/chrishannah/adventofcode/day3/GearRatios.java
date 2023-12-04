@@ -4,6 +4,9 @@ import me.chrishannah.adventofcode.AOCUtils;
 
 import java.util.*;
 
+/**
+ * Day 3: https://adventofcode.com/2023/day/3
+ */
 public class GearRatios {
 
     private static int calculateSumOfAllGearRatios() {

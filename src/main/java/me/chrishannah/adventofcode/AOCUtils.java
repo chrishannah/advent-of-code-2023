@@ -14,4 +14,26 @@ public class AOCUtils {
             throw new RuntimeException(e);
         }
     }
+
+    public static long lcm(Long[] numbers, int start, int end) {
+        if (end - start == 1) {
+            return lcm(numbers[start], numbers[end - 1]);
+        }
+        return lcm(numbers[start], lcm(numbers, start + 1, end));
+    }
+
+    public static long lcm(long a, long b) {
+        return (a * b) / gcd(a, b);
+    }
+
+    public static long gcd(long a, long b) {
+        if (a < b) {
+            return gcd(b, a);
+        }
+        if (a % b == 0) {
+            return b;
+        }
+        return gcd(b, a % b);
+    }
+
 }

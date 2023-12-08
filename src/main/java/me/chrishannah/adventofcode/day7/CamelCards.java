@@ -1,4 +1,6 @@
-package me.chrishannah.adventofcode;
+package me.chrishannah.adventofcode.day7;
+
+import me.chrishannah.adventofcode.AOCUtils;
 
 import java.util.Date;
 import java.util.HashMap;
